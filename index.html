@@ -2,22 +2,33 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>My IPTV</title>
+  <title>My IPTV Playlist</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; background: #000; color: #fff; }
-    .channel { display: inline-block; margin: 20px; }
-    .channel img { width: 150px; height: 100px; object-fit: contain; border: 2px solid #eee; border-radius: 8px; }
-    .channel p { margin-top: 8px; font-size: 14px; }
-    a { text-decoration: none; color: inherit; }
+    body { font-family: Arial, sans-serif; text-align: center; padding: 30px; background: #f5f5f5; }
+    h1 { color: #333; }
+    .channel { display: inline-block; margin: 15px; text-decoration: none; color: black; }
+    .channel img { width: 150px; border-radius: 10px; box-shadow: 0 3px 6px rgba(0,0,0,0.2); }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin-top: 20px;
+      background: #0078D7;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <h1>My IPTV Channels</h1>
-  <div class="channel">
-    <a href="intent://loadplaylist?url=https://trumdusit7-arch.github.io/my-iptv/my-iptv/playlist.m3u8#Intent;scheme=wiseplay;package=com.wiseplay;end">
-      <img src="https://cms.dmpcdn.com/livetv/2020/06/23/c93cf2c0-b54f-11ea-8fac-236a281cd6c5_320.png" alt="Channel 3 HD">
-      <p>Channel 3 HD</p>
+  <h1>📺 My IPTV Playlist</h1>
+
+  <div>
+    <a class="channel" href="intent://loadplaylist?url=https://trumdusit7-arch.github.io/my-iptv/playlist.m3u8#Intent;scheme=wiseplay;package=com.wiseplay;end">
+      <img src="https://cms.dmpcdn.com/livetv/2020/06/23/c93cf2c0-b54f-11ea-8fac-236a281cd6c5_320.png" alt="ช่อง 3HD">
+      <div>เปิดใน Wiseplay</div>
     </a>
   </div>
+
+  <a class="btn" href="https://trumdusit7-arch.github.io/my-iptv/playlist.m3u8">📂 เปิด playlist.m3u8 ตรง ๆ</a>
 </body>
 </html>
